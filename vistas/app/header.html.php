@@ -8,8 +8,8 @@
         <i class="bi bi-list"></i>
       </a>
     </li>
-    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Home</a></li>
-    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Contact</a></li>
+    <li class="nav-item d-none d-md-block"><a href="." class="nav-link">Inicio</a></li>
+    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Empresa</a></li>
   </ul>
   <!--end::Start Navbar Links-->
   <!--begin::End Navbar Links-->
@@ -165,7 +165,7 @@
             alt="User Image"
           />
           <p>
-            <?php echo $_SESSION['usuario']['nombre_completo'] ?> - Web Developer
+            <?php echo $_SESSION['usuario']['nombre_completo'] ?> - <?php echo $_SESSION['usuario']['puesto'] ?>
             <small>Member since Nov. 2023</small>
           </p>
         </li>

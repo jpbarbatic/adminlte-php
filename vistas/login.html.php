@@ -3,7 +3,7 @@
   <!--begin::Head-->
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>AdminLTE 4 | Login Page v2</title>
+    <title><?php echo APP_NAME ?> | Acceso</title>
     <!--begin::Primary Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="AdminLTE 4 | Login Page v2" />
@@ -51,15 +51,10 @@
     <div class="login-box">
       <div class="card card-outline card-primary">
         <div class="card-header">
-          <a
-            href="../index2.html"
-            class="link-dark text-center link-offset-2 link-opacity-100 link-opacity-50-hover"
-          >
-            <h1 class="mb-0"><b>Admin</b>LTE</h1>
-          </a>
+            <h1 class="mb-0" style="text-align: center;"><?php echo APP_NAME ?></h1>
         </div>
         <div class="card-body login-card-body">
-          <p class="login-box-msg">Sign in to start your session</p>
+          <p class="login-box-msg">Introduzca sus credenciales</p>
           <form action="login.php" method="post">
             <div class="input-group mb-1">
               <div class="form-floating">
@@ -77,16 +72,11 @@
             </div>
             <!--begin::Row-->
             <div class="row">
-              <div class="col-8 d-inline-flex align-items-center">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                  <label class="form-check-label" for="flexCheckDefault"> Remember Me </label>
-                </div>
-              </div>
+     
               <!-- /.col -->
-              <div class="col-4">
+              <div class="col">
                 <div class="d-grid gap-2">
-                  <button type="submit" class="btn btn-primary">Sign In</button>
+                  <button type="submit" class="btn btn-primary">Entrar</button>
                 </div>
               </div>
               <!-- /.col -->
