@@ -77,7 +77,9 @@
         <!--begin::App Content-->
         <div class="app-content">
           <!--begin::Container-->
-          <?php require('container.html.php') ?>
+            <div class="container-fluid">
+            <?php require($vista.'.html.php') ?>
+            </div>
           <!--end::Container-->
         </div>
         <!--end::App Content-->
