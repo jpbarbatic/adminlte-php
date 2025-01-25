@@ -61,7 +61,7 @@
   </head>
   <!--end::Head-->
   <!--begin::Body-->
-  <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+  <body class="layout-fixed sidebar-expand-lg sidebar-mini sidebar-collapse bg-body-tertiary">
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
@@ -78,7 +78,7 @@
         <div class="app-content">
           <!--begin::Container-->
             <div class="container-fluid">
-            <?php require($vista.'.html.php') ?>
+            <?php require('../vistas/'.$vista.'.html.php') ?>
             </div>
           <!--end::Container-->
         </div>

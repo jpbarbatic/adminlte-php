@@ -150,41 +150,30 @@
     <li class="nav-item dropdown user-menu">
       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
         <img
-          src="node_modules/admin-lte/dist/assets/img/user2-160x160.jpg"
+          src="node_modules/admin-lte/dist/assets/img/user<?php echo $_SESSION['usuario']['id'] ?>-128x128.jpg"
           class="user-image rounded-circle shadow"
           alt="User Image"
         />
-        <span class="d-none d-md-inline">Alexander Pierce</span>
+        <span class="d-none d-md-inline"><?php echo $_SESSION['usuario']['nombre_completo'] ?></span>
       </a>
       <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
         <!--begin::User Image-->
         <li class="user-header text-bg-primary">
           <img
-            src="node_modules/admin-lte/dist/assets/img/user2-160x160.jpg"
+            src="node_modules/admin-lte/dist/assets/img/user<?php echo $_SESSION['usuario']['id'] ?>-128x128.jpg"
             class="rounded-circle shadow"
             alt="User Image"
           />
           <p>
-            Alexander Pierce - Web Developer
+            <?php echo $_SESSION['usuario']['nombre_completo'] ?> - Web Developer
             <small>Member since Nov. 2023</small>
           </p>
         </li>
         <!--end::User Image-->
-        <!--begin::Menu Body-->
-        <li class="user-body">
-          <!--begin::Row-->
-          <div class="row">
-            <div class="col-4 text-center"><a href="#">Followers</a></div>
-            <div class="col-4 text-center"><a href="#">Sales</a></div>
-            <div class="col-4 text-center"><a href="#">Friends</a></div>
-          </div>
-          <!--end::Row-->
-        </li>
-        <!--end::Menu Body-->
         <!--begin::Menu Footer-->
         <li class="user-footer">
-          <a href="#" class="btn btn-default btn-flat">Profile</a>
-          <a href="#" class="btn btn-default btn-flat float-end">Sign out</a>
+          <a href="#" class="btn btn-default btn-flat">Perfil</a>
+          <a href="logout.php" class="btn btn-default btn-flat float-end">Cerrar sessión</a>
         </li>
         <!--end::Menu Footer-->
       </ul>

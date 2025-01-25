@@ -1,3 +1,4 @@
 <?php
+session_start();
 $vista='ejemplo';
-require('../vistas/plantilla.html.php');
+require('../vistas/app/plantilla.html.php');
