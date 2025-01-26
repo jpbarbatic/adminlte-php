@@ -19,16 +19,24 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     }
 
     $conn=db_open();
-    $res=db_query($conn, 'SELECT * FROM usuarios WHERE email=?', [$_REQUEST['login_email']]);
-    db_close($conn);    
+    $res=db_query($conn, 'SELECT * FROM usuarios WHERE email=?', [$_REQUEST['login_email']]);   
     
     if(count($res)==1 and password_verify($_REQUEST['login_password'], $res[0]['password']))
     {
         $_SESSION['usuario']=$res[0];
+        $formatter = new IntlDateFormatter(
+            'es_ES', // Idioma y localización
+            IntlDateFormatter::LONG, // Formato largo: incluye día de la semana
+            IntlDateFormatter::LONG // Sin formato de hora
+        );
+        db_query($conn, 'UPDATE usuarios set ultima_sesion=? WHERE id=?', [date('Y-m-d H:i:s'), $res[0]['id']]);
+        $_SESSION['inicio_sesion']= $formatter->format(new DateTime());
         header('Location: .'); exit;
     }else{
         $_SESSION['error']='El usuario no está registrado o el password es incorrecto';
     }
+    
+    db_close($conn);
 }
 
 require('../vistas/login.html.php');

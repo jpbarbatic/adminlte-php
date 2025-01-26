@@ -9,7 +9,7 @@
       </a>
     </li>
     <li class="nav-item d-none d-md-block"><a href="." class="nav-link">Inicio</a></li>
-    <li class="nav-item d-none d-md-block"><a href="#" class="nav-link">Empresa</a></li>
+    <li class="nav-item d-none d-md-block"><a href="noticias.php" class="nav-link">Noticias</a></li>
   </ul>
   <!--end::Start Navbar Links-->
   <!--begin::End Navbar Links-->
@@ -166,7 +166,7 @@
           />
           <p>
             <?php echo $_SESSION['usuario']['nombre_completo'] ?> - <?php echo $_SESSION['usuario']['puesto'] ?>
-            <small>Member since Nov. 2023</small>
+            <small><?php echo $_SESSION['inicio_sesion'] ?></small>
           </p>
         </li>
         <!--end::User Image-->

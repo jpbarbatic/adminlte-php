@@ -2,6 +2,7 @@
 ini_set('display_errors','On');
 ini_set('error_reporting', E_ALL );
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+setlocale(LC_ALL,'es_ES');
 
 define('APP_NAME', 'Gestión2000');
 
