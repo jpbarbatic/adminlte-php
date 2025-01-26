@@ -84,6 +84,7 @@
             <!--end::Row-->
           </form>
           <?php if(isset($_SESSION['error'])): ?>
+          <br/>
           <div class="alert alert-danger" role="alert">
             <?php echo $_SESSION['error'] ?>
           </div>
