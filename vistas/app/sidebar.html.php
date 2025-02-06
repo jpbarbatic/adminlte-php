@@ -28,18 +28,25 @@
       data-accordion="false"
     >
       <li class="nav-item">
-        <a href="#" class="nav-link active">
+        <a href="dashboard.php" class="nav-link active">
           <i class="nav-icon bi bi-speedometer"></i>
           <p>
             Dashboard
           </p>
         </a>
       </li>
-
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <i class="nav-icon bi bi-gear"></i>
+          <p>
+            Configuración
+          </p>
+        </a>
+      </li>
       <li class="nav-header">Sesión</li>
       <li class="nav-item">
         <a href="logout.php" class="nav-link">
-          <i class="nav-icon bi bi-box-arrow-in-right"></i>
+          <i class="nav-icon bi  bi-box-arrow-left"></i>
           <p>
             Cerrar
           </p>
