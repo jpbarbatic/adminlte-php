@@ -19,4 +19,5 @@ Para descargar las librerias es necesario tener instalado npm y ejecutar:
 cd public
 npm install
 ```
-
+# Demo
+https://asir2.rf.gd/iaw/adminlte-php/
