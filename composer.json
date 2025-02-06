@@ -1,0 +1,19 @@
+{
+    "name": "tharsys/adminlte-php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Tharsys\\AdminltePhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JPBM",
+            "email": "jpbarba@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "serve": "/opt/lampp/bin/php -S localhost:5000 -t public"
+    }
+}
